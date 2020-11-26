@@ -26,7 +26,8 @@ for env_name in scenario_builder.all_scenarios():
       entry_point='gfootball.env:create_environment',
       kwargs={
           'env_name': env_name,
-          'representation': 'extracted'
+          'representation': 'extracted',
+          'extra_players': 'kaggle:right_players=1'
       },
   )
 
